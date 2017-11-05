@@ -1,0 +1,261 @@
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%; 
+}
+.content-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#f1{
+	animation-delay: 2s;
+}
+.heading{
+	margin-top: 20.5%;
+	margin-left: 33%;
+	letter-spacing: 2px;
+	font-size: 65px;
+	font-family: 'Lato', sans-serif;
+	color: rgba(255,255,255,0.8);
+	margin-bottom: 0.2%;
+	text-shadow: 4px 4px 4px grey;
+
+}
+.row{
+    background: rgba(39,62,84,0.7);
+    overflow: hidden;
+    height: 671.5px;
+    z-index: 2;
+}
+hr{
+	margin-top: 0;
+	margin-right: 0%;
+	margin-left: 0%;
+}
+.next{
+	background-color: rgba(70, 130, 180,0.1);
+}
+.container{
+	margin-left: 20%;
+	margin-right: 15%;
+}
+.first-big{
+	margin-bottom: 0;
+	margin-left: 14%;
+	font-family: 'Lato', sans-serif;
+	font-size: 28px;
+	color: rgba(0,0,0,0.6);
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.navv{
+	background-color: steelblue;
+	height: 43px;
+	padding-left: 10%;
+	padding-top: 8px;
+	font-size: 22px;
+	font-family: 'Quicksand', sans-serif;
+	
+}
+@keyframes example{
+	0%   {color:steelblue;}
+    33%  {color:magenta;}
+    67%  {color:orange;}
+    100% {color:steelblue;}
+}
+@-webkit-keyframes example {
+    0%   {color:steelblue;}
+    33%  {color:magenta;}
+    67%  {color:orange;}
+    100% {color:steelblue;}
+}
+button{
+	margin-left: 42.5%;
+	padding: 5px 10px;
+	border-radius: 6px;
+	background-color: transparent;
+	border: none;
+	/*border-top: 1px solid rgba(255,255,255,0.8);*/
+	color: orange;
+	font-weight: 600;
+	outline: none;
+	transition: background 1s;
+}
+.seperator{
+	margin-bottom: 0;
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-bottom: 0.5%;
+	color: rgba(255,255,255,0.8);
+	animation-delay: 0.5s;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.virto{
+	padding: 12px 16px 9px 3px;
+	border-right: 1px solid orange;
+}
+.linkk{
+	margin: 0; 
+	
+	padding: 9px;
+	padding-right: 18px;
+	margin-right: 0;
+}
+.linkk-2{
+	margin-left: 0;
+	border-left: 1px solid orange;
+	padding: 9px 16px 9px 16px;
+	font-weight: 600;
+	color:white;
+	font-size: 26px;
+}
+.linkk:hover{
+	color: #F5BF0F;
+}
+.linkk-2:hover{
+	background-color: white;
+	color: steelblue;
+}
+button:hover{
+	color: rgba(0,0,0,0.5);
+	background-color: rgba(255,255,255,0.5);
+	border: none;
+}
+@media (min-aspect-ratio: 16/9) {
+  .content-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .content-video {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .content-video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .content-video {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    background: url('poster.jpg') center center / cover no-repeat;
+  }
+
+  .content-video {
+    display: none;
+  }
+}
+
+.dropbtn {
+	color: black;
+	font-weight:400;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 0;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+	margin-left: -5px;
+	margin-top: 0px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px 50px 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    transition: background 1s;
+}
+
+.footer{
+	height: 70px;
+	background-color: #333;
+	padding-left: 20%;
+	padding-top: 40px;
+	color: rgba(255,255,255,0.6);
+	font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#map{
+	height: 400px;
+	width: 100%;
+	background-color: grey;
+	border: 2px solid grey;
+	border-radius: 10px;
+}
+
+.footer a{
+	color: rgba(255,255,255,0.3);
+}
+.footer a:hover{
+	color:orange;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: rgba(70,130,180,0.5);
+	color: orange;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    color: #F5BF0F;
+    background-color: transparent;
+}
+
+
+.slideshow
+{
+	transition: all 2s;
+
+	height:599px;
+	width:449px;
+}
